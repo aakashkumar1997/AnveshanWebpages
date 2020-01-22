@@ -1,0 +1,114 @@
+.content_box_wrapper{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding: 0px;
+	background-color: #F1F1F4;
+	overflow: auto;
+}
+.buyer_intro_wrapper {
+	width: 80%;
+	height: 60%;
+	margin: 0 auto;
+	padding: 20px;
+}
+.buyer_intro_wrapper::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.buyer_intro_text_wrapper {
+	width: 60%;
+	height: auto;
+	float: left;
+	text-align: left;
+}
+.anveshan_logo_div_wrapper {
+	width: 100%;
+	height: auto;
+	margin: 40px auto;
+}
+.anveshan_logo_img_wrapper {
+	width: 100px;
+	height: auto;
+	margin: 0 auto;
+}
+.anveshan_logo_img {
+	width: 100%;
+	height: auto;
+}
+.anveshan_logo_text_p {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+.buyer_intro_text {
+	width: 40%;
+	height: auto;
+	margin: 0 auto;
+	color: #363534;
+}
+.buyer_intro_text_p {
+	margin: 0;
+}
+.buyer_intro_text_div {
+	margin: 30px auto;
+}
+#buyer_intro_text_greeting_name {
+	font-size: 25px;
+}
+.buyer_intro_text_item_div {
+	font-size: 20px;
+}
+.buyer_intro_text_date_div {
+	font-size: 20px;
+}
+.buyer_intro_text_delivery_guy_div {
+	font-size: 18px;
+}
+.buyer_intro_item {
+	width: 40%;
+	height: auto;
+	float: right;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.buyer_intro_item_img {
+	width: 100%;
+	height: auto;
+}
+.welcome_sec_content_wrapper {
+	width: 70%;
+	height: auto;
+	padding: 20px;
+	margin: 20px auto;
+	text-align: center;
+}
+.welcome_sec_heading {
+	font-size: 60px;
+	color: #4D4D4D;
+}
+.welcome_sec_text {
+	font-size: 16px;
+	color: #4D4D4D;
+	text-align: justify;
+}
+.discover_stages_wrapper {
+	width: 70%;
+	height: auto;
+	margin: 20px auto;
+	text-align: center;
+}
+.discover_stages_text {
+	font-size: 26px;
+	color: #4D4D4D;
+}
+.discover_stages_stages {
+	width: auto;
+	height: auto;
+	margin: 10px auto;
+}
+.discover_stages_stages_stage {
+	margin: 2px 10px;
+}
