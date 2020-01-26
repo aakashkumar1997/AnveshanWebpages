@@ -1,16 +1,24 @@
+body {
+	background-color: #F1F1F4 !important;
+	overflow: auto;
+	margin: 0;
+	padding: 0;
+}
 .content_box_wrapper{
 	width: 100%;
 	height: auto;
 	margin: 0 auto;
 	padding: 0px;
-	background-color: #F1F1F4;
-	overflow: auto;
+	min-width: 560px;
 }
 .buyer_intro_wrapper {
 	width: 80%;
 	height: 60%;
-	margin: 0 auto;
+	margin: 0 auto !important;
 	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .buyer_intro_wrapper::after {
 	content: "";
@@ -43,7 +51,7 @@
 	padding: 0;
 }
 .buyer_intro_text {
-	width: 40%;
+	width: 70%;
 	height: auto;
 	margin: 0 auto;
 	color: #363534;
@@ -66,6 +74,19 @@
 .buyer_intro_text_delivery_guy_div {
 	font-size: 18px;
 }
+@media only screen and (max-width: 600px) {
+	.buyer_intro_wrapper {
+		display: block;
+	}
+	.buyer_intro_text_wrapper {
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	.buyer_intro_text {
+		width: 100%;
+	}
+}
 .buyer_intro_item {
 	width: 40%;
 	height: auto;
@@ -73,6 +94,11 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+@media only screen and (max-width: 600px) {
+	.buyer_intro_item {
+		width: 100%;
+	}	
 }
 .buyer_intro_item_img {
 	width: 100%;
@@ -93,6 +119,22 @@
 	font-size: 16px;
 	color: #4D4D4D;
 	text-align: justify;
+}
+@media only screen and (max-width: 930px) {
+	.welcome_sec_heading {
+		font-size: 40px;
+	}
+	.welcome_sec_text {
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width: 650px) {
+	.welcome_sec_heading {
+		font-size: 30px;
+	}
+	.welcome_sec_text {
+		font-size: 14px;
+	}
 }
 .discover_stages_wrapper {
 	width: 70%;
