@@ -1,5 +1,9 @@
+@font-face {
+  font-family: AnveshanFont;
+  src: url(Varela-Regular.ttf);
+}
+
 body {
-	background-color: #F1F1F4 !important;
 	overflow: auto;
 	margin: 0;
 	padding: 0;
@@ -8,17 +12,21 @@ body {
 	width: 100%;
 	height: auto;
 	margin: 0 auto;
-	padding: 0px;
-	min-width: 560px;
+	min-width: 600px;
+	font-family: AnveshanFont;
 }
 .buyer_intro_wrapper {
-	width: 80%;
-	height: 60%;
+	width: 70%;
+	height: auto;
 	margin: 0 auto !important;
-	padding: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-image: url('Images/webpage-section-01-1.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 90% 100%;
+	position: relative;
 }
 .buyer_intro_wrapper::after {
 	content: "";
@@ -32,9 +40,21 @@ body {
 	text-align: left;
 }
 .anveshan_logo_div_wrapper {
-	width: 100%;
+	position: absolute;
+	bottom: -50px;
+	left: 100px;
+	display: inline-block;
 	height: auto;
-	margin: 40px auto;
+}
+@media only screen and (max-width: 1000px) {
+	.buyer_intro_wrapper {
+		width: 100%;
+		height: 1000px;
+		background-size: 100% 100%;
+	}
+	.anveshan_logo_div_wrapper {
+		bottom: -10px;
+	}	
 }
 .anveshan_logo_img_wrapper {
 	width: 100px;
@@ -43,18 +63,22 @@ body {
 }
 .anveshan_logo_img {
 	width: 100%;
-	height: auto;
+	height: 100%;
 }
 .anveshan_logo_text_p {
 	text-align: center;
 	margin: 0;
 	padding: 0;
+	color: #3D3D3D;
 }
 .buyer_intro_text {
 	width: 70%;
 	height: auto;
 	margin: 0 auto;
-	color: #363534;
+	color: #FFFFFF;
+}
+.buyer_intro_text_text_wrapper {
+	margin: 0 auto;
 }
 .buyer_intro_text_p {
 	margin: 0;
@@ -63,7 +87,7 @@ body {
 	margin: 30px auto;
 }
 #buyer_intro_text_greeting_name {
-	font-size: 25px;
+	font-size: 30px;
 }
 .buyer_intro_text_item_div {
 	font-size: 20px;
@@ -74,8 +98,11 @@ body {
 .buyer_intro_text_delivery_guy_div {
 	font-size: 18px;
 }
+.buyer_intro_text_p_val {
+	font-style: bold;
+}
 @media only screen and (max-width: 600px) {
-	.buyer_intro_wrapper {
+	/*.buyer_intro_wrapper {
 		display: block;
 	}
 	.buyer_intro_text_wrapper {
@@ -85,7 +112,7 @@ body {
 	}
 	.buyer_intro_text {
 		width: 100%;
-	}
+	}*/
 }
 .buyer_intro_item {
 	width: 40%;
@@ -97,18 +124,20 @@ body {
 }
 @media only screen and (max-width: 600px) {
 	.buyer_intro_item {
-		width: 100%;
+		/*width: 100%;*/
 	}	
 }
 .buyer_intro_item_img {
 	width: 100%;
 	height: auto;
+	max-width: 210px;
+	max-height: 600px;
 }
 .welcome_sec_content_wrapper {
 	width: 70%;
 	height: auto;
 	padding: 20px;
-	margin: 20px auto;
+	margin: 120px auto;
 	text-align: center;
 }
 .welcome_sec_heading {
@@ -146,6 +175,11 @@ body {
 	font-size: 26px;
 	color: #4D4D4D;
 }
+@media only screen and (max-width: 810px) {
+	.discover_stages_text {
+		font-size: 18px;
+	}	
+}
 .discover_stages_stages {
 	width: auto;
 	height: auto;
@@ -159,10 +193,19 @@ body {
 
 .processInfo_content_box_wrapper {
 	margin: 0 auto;
-	padding: 0px;
+	padding: 40px 0;
 	overflow: auto;
-	width: 50%;
+	width: 70%;
 	min-width: 600px;
+	background-image: url('Images/webpage-section-03-1.png');
+	background-size: 100% 46%;
+	background-repeat: no-repeat;
+	background-position: 50% 72%;
+}
+@media only screen and (max-width: 1000px) {
+	.processInfo_content_box_wrapper {
+		width: 100%;
+	}
 }
 .processInfo_content_box {
 	margin: 0 auto;
@@ -172,7 +215,7 @@ body {
 }
 .processInfo_desc_box_image_div {
 	text-align: center;
-	width: 150px;
+	width: 400px;
 	height: auto;
 	margin: 0 auto;
 	padding: 10px;
@@ -204,7 +247,7 @@ body {
 	font-size: 15px;
 }
 .processInfo_desc_box_location_image_div {
-	width: 50%;
+	width: 60%;
 	min-width: 400px;
 	height: auto;
 	margin: 0px auto;
@@ -215,7 +258,8 @@ body {
 	height: 100%;
 }
 .processInfo_intermediate_process {
-	margin: 150px auto;
+	/*margin: 80px auto;*/
+	margin: 0 auto;
 	width: 50%;
 	display: flex;
 	justify-content: center;
@@ -249,5 +293,6 @@ body {
 	text-align: center;
 }
 .processInfo_knowMore_btn {
-	padding: 15px 60px;
+	padding: 10px 60px !important;
+	outline: none;
 }
