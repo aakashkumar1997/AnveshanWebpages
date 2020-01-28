@@ -45,6 +45,16 @@ body {
 	display: inline-block;
 	height: auto;
 }
+@media only screen and (max-width: 600px) {
+	.anveshan_logo_div_wrapper {
+		left: 50px;
+	}	
+}
+@media only screen and (max-width: 350px) {
+	.anveshan_logo_div_wrapper {
+		left: 30px;
+	}	
+}
 @media only screen and (max-width: 1000px) {
 	.buyer_intro_wrapper {
 		width: 100%;
@@ -56,13 +66,19 @@ body {
 	}	
 }
 .anveshan_logo_img_wrapper {
-	width: 100px;
+	width: auto;
 	height: auto;
 	margin: 0 auto;
 }
 .anveshan_logo_img {
-	width: 100%;
+	width: 100px;
 	height: 100%;
+	margin: 0 5px;
+}
+.agroblock_logo_img {
+	width: 150px;
+	height: 100%;
+	margin: 0 5px;
 }
 .anveshan_logo_text_p {
 	text-align: center;
@@ -98,7 +114,7 @@ body {
 	font-size: 30px;
 }
 .buyer_intro_text_item_div {
-	font-size: 20px;
+	font-size: 25px;
 }
 .buyer_intro_text_date_div {
 	font-size: 20px;
@@ -109,12 +125,23 @@ body {
 .buyer_intro_text_p_val {
 	font-style: bold;
 }
+@media only screen and (max-width: 490px) {
+	.buyer_intro_text_wrapper {
+		width: 70%;
+	}
+	.buyer_intro_text {
+		width: 100%;
+	}
+	.buyer_intro_item {
+		width: 30%;
+	}
+}
 @media only screen and (max-width: 425px) {
 	#buyer_intro_text_greeting_name {
-		font-size: 22px;
+		font-size: 26px;
 	}
 	.buyer_intro_text_item_div {
-		font-size: 18px;
+		font-size: 19px;
 	}
 	.buyer_intro_text_date_div {
 		font-size: 18px;
@@ -156,7 +183,7 @@ body {
 .welcome_sec_text {
 	font-size: 16px;
 	color: #4D4D4D;
-	text-align: justify;
+	text-align: center;
 }
 @media only screen and (max-width: 930px) {
 	.welcome_sec_content_wrapper {
@@ -243,9 +270,9 @@ body {
 	overflow: auto;
 	width: 70%;
 	background-image: url('Images/webpage-section-03-1.png');
-	background-size: 100% 48%;
+	background-size: 100% 50%;
 	background-repeat: no-repeat;
-	background-position: 50% 75%;
+	background-position: 50% 80%;
 	background-color: #EEF3ED;
 	border-radius: 10px;
 }
@@ -322,7 +349,7 @@ body {
 	width: 60%;
 	min-width: 320px;
 	height: auto;
-	margin: 0px auto;
+	margin: 50px auto;
 	text-align: center;
 }
 .processInfo_desc_box_location_image {
