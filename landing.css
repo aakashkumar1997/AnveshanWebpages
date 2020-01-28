@@ -12,7 +12,6 @@ body {
 	width: 100%;
 	height: auto;
 	margin: 0 auto;
-	min-width: 600px;
 	font-family: AnveshanFont;
 }
 .buyer_intro_wrapper {
@@ -70,6 +69,7 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #3D3D3D;
+	font-style: bold;
 }
 .buyer_intro_text {
 	width: 70%;
@@ -77,11 +77,19 @@ body {
 	margin: 0 auto;
 	color: #FFFFFF;
 }
+@media only screen and (max-width: 1000px) {
+	.buyer_intro_text {
+		width: 90%;
+	}	
+}
 .buyer_intro_text_text_wrapper {
 	margin: 0 auto;
 }
 .buyer_intro_text_p {
 	margin: 0;
+}
+.buyer_intro_text_p_greeting_line img {
+	width: 35px;
 }
 .buyer_intro_text_div {
 	margin: 30px auto;
@@ -101,18 +109,19 @@ body {
 .buyer_intro_text_p_val {
 	font-style: bold;
 }
-@media only screen and (max-width: 600px) {
-	/*.buyer_intro_wrapper {
-		display: block;
+@media only screen and (max-width: 425px) {
+	#buyer_intro_text_greeting_name {
+		font-size: 22px;
 	}
-	.buyer_intro_text_wrapper {
-		width: 100%;
-		height: auto;
-		text-align: center;
+	.buyer_intro_text_item_div {
+		font-size: 18px;
 	}
-	.buyer_intro_text {
-		width: 100%;
-	}*/
+	.buyer_intro_text_date_div {
+		font-size: 18px;
+	}
+	.buyer_intro_text_delivery_guy_div {
+		font-size: 18px;
+	}	
 }
 .buyer_intro_item {
 	width: 40%;
@@ -121,11 +130,6 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-@media only screen and (max-width: 600px) {
-	.buyer_intro_item {
-		/*width: 100%;*/
-	}	
 }
 .buyer_intro_item_img {
 	width: 100%;
@@ -140,6 +144,11 @@ body {
 	margin: 120px auto;
 	text-align: center;
 }
+@media only screen and (max-width: 990px) {
+	.welcome_sec_content_wrapper {
+		width: 90%;
+	}
+}
 .welcome_sec_heading {
 	font-size: 60px;
 	color: #4D4D4D;
@@ -150,6 +159,9 @@ body {
 	text-align: justify;
 }
 @media only screen and (max-width: 930px) {
+	.welcome_sec_content_wrapper {
+		margin: 50px auto;
+	}
 	.welcome_sec_heading {
 		font-size: 40px;
 	}
@@ -171,9 +183,15 @@ body {
 	margin: 20px auto;
 	text-align: center;
 }
+@media only screen and (max-width: 650px) {
+	.discover_stages_wrapper {
+		width: 100%;
+	}
+}
 .discover_stages_text {
 	font-size: 26px;
 	color: #4D4D4D;
+	text-transform: capitalize;
 }
 @media only screen and (max-width: 810px) {
 	.discover_stages_text {
@@ -183,24 +201,53 @@ body {
 .discover_stages_stages {
 	width: auto;
 	height: auto;
-	margin: 10px auto;
+	margin: 40px auto;
 }
 .discover_stages_stages_stage {
-	margin: 2px 10px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 70px;
+	height: 70px;
 }
-
-
+.discover_stages_stages_stage_text:hover {
+	cursor: pointer;
+}
+.discover_stages_stages_stage_line {
+	width: 70px;
+}
+@media only screen and (max-width: 450px) {
+	.discover_stages_stages_stage {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 60px;
+		height: 60px;
+		font-size: 13px;
+	}
+	.discover_stages_stages_stage_line {
+		width: 60px;
+	}	
+}
+#discover_stages_stages_stage1 {
+	background-image: url('Images/circle.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	color: #FFFFFF;
+}
 
 .processInfo_content_box_wrapper {
 	margin: 0 auto;
 	padding: 40px 0;
 	overflow: auto;
 	width: 70%;
-	min-width: 600px;
 	background-image: url('Images/webpage-section-03-1.png');
-	background-size: 100% 46%;
+	background-size: 100% 48%;
 	background-repeat: no-repeat;
-	background-position: 50% 72%;
+	background-position: 50% 75%;
+	background-color: #EEF3ED;
+	border-radius: 10px;
 }
 @media only screen and (max-width: 1000px) {
 	.processInfo_content_box_wrapper {
@@ -220,35 +267,60 @@ body {
 	margin: 0 auto;
 	padding: 10px;
 }
+@media only screen and (max-width: 400px) {
+	.processInfo_desc_box_image_div {
+		width: auto;
+	}
+}
 .processInfo_desc_box_image {
 	width: 100%;
 	height: 100%;
 }
 .processInfo_desc_box_name {
 	text-align: center;
-	font-weight: bold;
 	padding: 10px;
-	font-size: 20px;
+	font-size: 23px;
+	color: #36AE91;
+	text-transform: uppercase;
 }
 .processInfo_desc_box_process_desc_wrapper {
 	width: 50%;
-	min-width: 400px;
+	min-width: 320px;
 	margin: 0 auto;
 	padding: 10px;
+	color: black;
 }
 .processInfo_desc_box_process_desc {
 	text-align: center;
 }
-.processInfo_desc_box_aspiration {
-	width: 50%;
-	min-width: 300px;
-	text-align: center;
+.processInfo_desc_box_aspiration_wrapper {
+	width: 40%;
 	margin: 50px auto;
+	background-image: url('Images/shapes-05.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+@media only screen and (max-width: 1240px) {
+	.processInfo_desc_box_aspiration_wrapper {
+		width: 50%;
+	}
+}
+@media only screen and (max-width: 700px) {
+	.processInfo_desc_box_aspiration_wrapper {
+		width: 60%;
+	}
+}
+.processInfo_desc_box_aspiration {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
 	font-size: 15px;
+	color: #36AE91;
 }
 .processInfo_desc_box_location_image_div {
 	width: 60%;
-	min-width: 400px;
+	min-width: 320px;
 	height: auto;
 	margin: 0px auto;
 	text-align: center;
@@ -258,8 +330,8 @@ body {
 	height: 100%;
 }
 .processInfo_intermediate_process {
-	/*margin: 80px auto;*/
-	margin: 0 auto;
+	min-width: 320px;
+	margin: 50px auto;
 	width: 50%;
 	display: flex;
 	justify-content: center;
@@ -286,7 +358,9 @@ body {
 	text-align: center;
 }
 .processInfo_intermediate_process_text {
-	font-weight: bold;
+	/*font-weight: bold;*/
+	font-size: 19px;
+	text-transform: capitalize;
 }
 .processInfo_knowMore_btn_div {
 	margin: 60px auto;
