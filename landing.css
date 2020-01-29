@@ -234,6 +234,15 @@ body {
 	margin: 20px auto;
 	text-align: center;
 }
+.discover_stages_sec_div {
+	position: relative;;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100; 
+}
 @media only screen and (max-width: 650px) {
 	.discover_stages_wrapper {
 		width: 100%;
@@ -264,6 +273,10 @@ body {
 .discover_stages_stages_stage_text:hover {
 	cursor: pointer;
 }
+.discover_stages_stages_stage_text > a {
+	text-decoration: none;
+	color: #000000;
+}
 .discover_stages_stages_stage_line {
 	width: 70px;
 }
@@ -280,7 +293,9 @@ body {
 		width: 60px;
 	}	
 }
-#discover_stages_stages_stage1 {
+
+
+.bg_focus_circle {
 	background-image: url('Images/circle.png');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
